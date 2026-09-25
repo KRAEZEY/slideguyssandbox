@@ -16,7 +16,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script>'use strict';
 document.addEventListener('DOMContentLoaded', async () => {
   const config = {"url":"https://vaobmohukgcqfvnclqyh.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZhb2Jtb2h1a2djcWZ2bmNscXloIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ3NTcyNzksImV4cCI6MjA2MDMzMzI3OX0.6pl5QBTVUr8wu3bn4kXhI2kPE5qf97PrIbUw7-0382M"};
-  if(location.origin!=='https://slideguys-calendar.vercel.app'){document.getElementById('notice').hidden=false;document.getElementById('notice').textContent='Open this test page at https://slideguys-calendar.vercel.app/sandbox.html to connect to the sandbox checkout.';document.getElementById('unitGrid').textContent='Sandbox checkout requires the hosted test page.';return;}
+  if(location.origin!=='https://slideguyssandbox.vercel.app'){document.getElementById('notice').hidden=false;document.getElementById('notice').textContent='Open this test page at https://slideguyssandbox.vercel.app/ to connect to the sandbox checkout.';document.getElementById('unitGrid').textContent='Sandbox checkout requires the hosted test page.';return;}
   const $ = id => document.getElementById(id);
   const money = value => '$' + Number(value).toFixed(2);
   const dateText = value => new Date(value + 'T12:00:00').toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'});
